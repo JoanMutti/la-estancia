@@ -10,12 +10,12 @@ const ProductsCount = ({stock, initial = 0, onAdd}) => {
 
     const plus = () =>{
       if(count < stock) {
-        setCount(count + 1)
+        setCount(count + 0.25)
       }
     }
     const minus = () =>{
       if(count > initial) {
-        setCount( count - 1)
+        setCount( count - 0.25)
       }
     }
 

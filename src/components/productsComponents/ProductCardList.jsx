@@ -1,6 +1,5 @@
-import React, { memo } from "react";
+import React from "react";
 import ProductCard from "./ProductCard";
-
 
 const ProductCardList = ({ products, inOffers }) => {
   return (
@@ -41,4 +40,4 @@ const ProductCardList = ({ products, inOffers }) => {
   );
 };
 
-export default memo(ProductCardList); //memo es para que no tenga que volver a renderizar si ya lo hizo una vez
+export default ProductCardList; 

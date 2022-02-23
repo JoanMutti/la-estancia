@@ -30,6 +30,7 @@ const PCardListContainer = ({inOffers}) => {
 
   return (
     <div className=''>
+      <nav>FILTROS</nav>
         <ProductCardList products={offersData} inOffers={inOffers}/>
         {/* <ProductCardList products={data}/> */}
     </div>

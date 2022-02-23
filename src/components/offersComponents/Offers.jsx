@@ -10,11 +10,11 @@ import gifEnvios from '../../envios.gif'
 
 
 const offers = [
-    {img: pechugas, name: 'Pechuga de Pollo', price: 600, offer: '1 Kilo', id: 'iddeprueba'},
-    {img: soja, name: 'Milanesas de soja', price: 299, offer: '1 Kilo', id: 'iddeprueba2'},
-    {img: tapa, name: 'Tapa de asado', price: 790, offer: '1 Kilo', id: 'iddeprueba3'},
-    {img: alitas, name: 'Alitas de Pollo', price: 200, offer: '2 Kilos', id: 'iddeprueba4'},
-    {img: bastones, name: 'Bastones de queso', price: 830, offer: '1 Kilo', id: 'iddeprueba5'},
+    {img: pechugas, name: 'Pechuga de Pollo', price: 600, offer: '1 Kilo', id: 'iddeprueba', stock: 60, description: 'Lorem ipsum dolor sit amet...'},
+    {img: soja, name: 'Milanesas de soja', price: 299, offer: '1 Kilo', id: 'iddeprueba2', stock: 40, description: 'Lorem ipsum dolor sit amet...'},
+    {img: tapa, name: 'Tapa de asado', price: 790, offer: '1 Kilo', id: 'iddeprueba3', stock: 20, description: 'Lorem ipsum dolor sit amet...'},
+    {img: alitas, name: 'Alitas de Pollo', price: 200, offer: '2 Kilos', id: 'iddeprueba4', stock: 15, description: 'Lorem ipsum dolor sit amet...'},
+    {img: bastones, name: 'Bastones de queso', price: 830, offer: '1 Kilo', id: 'iddeprueba5', stock: 25, description: 'Lorem ipsum dolor sit amet...'},
 ]
 
 const CardOffer = ({img, name, price, offer, id}) => {

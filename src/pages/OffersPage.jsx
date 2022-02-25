@@ -7,7 +7,6 @@ const OffersPage = () => {
   return (
     <div>
       <Header />
-      <h1>Promos</h1>
       <PCardListContainer inOffers={true} />
       <Footer />
     </div>

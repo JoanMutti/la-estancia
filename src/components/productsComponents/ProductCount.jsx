@@ -20,13 +20,13 @@ const ProductsCount = ({stock, initial = 0, onAdd}) => {
     }
 
     return (
-    <div className="">
-      <div className=''>
-        <button className='' onClick={plus}><CgMathPlus fontSize={12} color='#fafafa' /></button>
-        <p className='' >{count}</p>
-        <button className='' onClick={minus}><CgMathMinus fontSize={12} color='#fafafa' /></button>
+    <div className="container container-fluid text-center">
+      <div className='container container-fluid d-flex justify-content-center align-items-center'>
+        <button className='btn btn-secondary' onClick={plus}><CgMathPlus fontSize={12} color='#fafafa' /></button>
+        <p className='fs-4 p-count text-center' >{count}</p>
+        <button className='btn btn-secondary' onClick={minus}><CgMathMinus fontSize={12} color='#fafafa' /></button>
       </div>
-        <button className={'btnOnAdd' + (stock > 0? '' : ' disable') } onClick={()=> onAdd(count)}>
+        <button className={'btnOnAdd' + (stock > 0? '' : ' disable') + ' btn btn-success rounded-pill' } onClick={()=> onAdd(count)}>
           Agregar al carrito
         </button>
     </div>

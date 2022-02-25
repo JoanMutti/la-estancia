@@ -51,6 +51,8 @@
 }
 
 .header-nav-link{
+  text-decoration: none;
+  color: #fafafa;
   margin-right: 32px;
   margin-left: 32px;
 }
@@ -305,8 +307,10 @@
 }
 
 .footer-list-item{
+  text-decoration-line: none;
   font-size: 14px;
   font-weight: 400;
+  
 }
 
 .footer-socials-container{
@@ -362,4 +366,32 @@
     font-size: 25px;
   }
 }
+/* Products NavBar */
+/* .border-0:focus{
+border: solid rgba(219, 149, 32, 1) 4px !important;
+} */
 
+/* Product Count */
+.p-count{
+  color:black;
+  margin: 4px;
+  width: 60px;
+}
+
+.p-ofer-product{
+  margin:15px;
+}
+.p-description-product{
+color: black;
+}
+
+/* Products card */
+.products-cards-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 315px);
+  grid-gap: 20px;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+}

@@ -20,29 +20,28 @@ const ProductCard = ({
   };
 
   return (
-    <div className="" >
-      {/* no se si va la carga de productos aca */}
-      {/* {product? ( */}
+    <div className="container conteriner-fluid" >
       <div className="card-container" id={id}>
         <div className="card-offer-heart-icon">
           <AiOutlineHeart fontSize={18} color="#fafafa" />
         </div>
         <div className="card-offer">
-          <img src={img} alt={name} />
+          <img className="img-fluid" src={img} alt={name} />
           <div className="card-offer-info">
-            <p className="card-offer-name">{name}</p>
-            <p className="card-offer-description">{description}</p>
+            <p className="card-offer-name fs-2">{name}</p>
+            <p className="card-offer-description fs-5 p-description-product">{description}</p>
             {inOffer === true ? (
-                // agregar clase destacando la oferta
-              <div className="card-offer-price">
-                <p className="card-offer-price-value">{`$ ${price}`}</p>
-                <p className="card-offer-price-cant">{`Por ${offer}`}</p>
-                <p className="">Producto en oferta</p>
+              <div className="container-fluid text-center">
+              <div className="card-offer-price d-flex justify-content-center">
+                <p className="card-offer-price-value fs-2">{`$ ${price} /`}</p>
+                <p className="card-offer-price-cant fs-3">{`por ${offer}`}</p>
+              </div>
+                <p className="fs-3 alert alert-success border-3 border-success p-ofer-product">Producto en Oferta</p>
               </div>
             ) : (
-              <div className="card-offer-price">
-                <p className="card-offer-price-value">{`$ ${price}`}</p>
-                <p className="card-offer-price-cant">{`Por ${offer}`}</p>
+              <div className="card-offer-price container-fluid text-center d-flex justify-content-center">
+                <p className="card-offer-price-value fs-2">{`$ ${price} /`}</p>
+                <p className="card-offer-price-cant fs-3">{`por ${offer}`}</p>
               </div>
             )}
             {stock > 0 ? (
@@ -52,16 +51,11 @@ const ProductCard = ({
                 onAdd={onAdd}
               />
             ) : (
-              <p className="">No hay stock</p>
+              <p className="fs-3 fw-bolder border-3 border-danger alert alert-danger">No hay stock</p>
             )}
           </div>
         </div>
       </div>
-      {/* ) : (
-<div className=''>
-    <p className=''>Cargando . . .</p>
-</div>
-) } */}
     </div>
   );
 };

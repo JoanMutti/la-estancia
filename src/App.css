@@ -36,8 +36,8 @@
 .header-up-icon{
   cursor: pointer;
 }
-
-.active{
+/* Modifico el nombre de esta clase para que no se repita con Bootstrapt */
+.active1{
   color: rgba(219, 149, 32, 1);
   font-weight: 700;
   border-bottom: 2px solid rgba(219, 149, 32, 1);

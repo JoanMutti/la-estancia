@@ -20,7 +20,7 @@ const ProductCard = ({
   };
 
   return (
-    <div className="">
+    <div className="" >
       {/* no se si va la carga de productos aca */}
       {/* {product? ( */}
       <div className="card-container" id={id}>

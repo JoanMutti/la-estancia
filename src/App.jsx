@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import ProductsPage from './pages/ProductsPage'
 import OffersPage from './pages/OffersPage'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

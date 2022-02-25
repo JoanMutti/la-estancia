@@ -8,6 +8,7 @@ const ProductsPage = () => {
     <div>
       <Header />
       <h1>Productos</h1>
+      <nav className="header-nav"></nav>
       <PCardListContainer inOffers={false} />
       <Footer />
     </div>

@@ -2,7 +2,7 @@
 
 *{
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
@@ -36,9 +36,9 @@
 .header-up-icon{
   cursor: pointer;
 }
-/* Modifico el nombre de esta clase para que no se repita con Bootstrapt */
-.active1{
-  color: rgba(219, 149, 32, 1);
+
+.active{
+  color: rgba(219, 149, 32, 1) !important;
   font-weight: 700;
   border-bottom: 2px solid rgba(219, 149, 32, 1);
 }
@@ -394,4 +394,62 @@ color: black;
   justify-content: center;
   place-items: center;
   align-items: center;
+}
+
+.card-offer-localoffer{
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 185, 53);
+  z-index: 9999; 
+}
+.card-offer-localoffer p{
+  top:43px;
+  position: absolute;
+  color: black;
+  font-weight: 800;
+  font-size: larger;
+}
+
+.button-header{
+  background-color: #ffffff7c !important;
+  border: #d3cccc solid 4px !important;
+  margin: 15px;
+}
+
+/* About Us */
+
+.aboutUs{
+  background-image:url('../src/Fondo_sobre_nosotros\ 1.png') ;
+  background-repeat:no-repeat ;
+  background-position:left top;
+  background-size: 50% 100% ;
+  height: 70vh;  
+  
+}
+.aboutUs-card{
+  background-color: #fafafa;
+  width: 500px !important;
+  height: 225px !important;
+  margin: 30px 33vh;
+}
+.aboutUs-title, .aboutUs-text{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.aboutUs-title{
+  font-size: 36px;
+  padding:20px ;
+}
+
+.aboutUs-text{
+  font-size: 14px;
 }

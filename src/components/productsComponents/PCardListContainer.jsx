@@ -7,11 +7,11 @@ const PCardListContainer = ({inOffers}) => {
 //Llamada de Firebase
 
   return (
-    <div className=''>
+    // <div className=''>
       
         <ProductCardList products={offersData} inOffers={inOffers} />
-        {/* <ProductCardList products={data}/> */}
-    </div>
+       // <ProductCardList products={data}/>
+    // </div>
   )
 }
 

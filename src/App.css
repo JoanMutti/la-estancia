@@ -2,7 +2,7 @@
 
 *{
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
@@ -56,7 +56,7 @@ main{
 }
 
 .active{
-  color: rgba(219, 149, 32, 1);
+  color: rgba(219, 149, 32, 1) !important;
   font-weight: 700;
   border-bottom: 2px solid rgba(219, 149, 32, 1);
 }
@@ -69,6 +69,8 @@ main{
 }
 
 .header-nav-link{
+  text-decoration: none;
+  color: #fafafa;
   margin-right: 32px;
   margin-left: 32px;
 }
@@ -324,8 +326,10 @@ main{
 }
 
 .footer-list-item{
+  text-decoration-line: none;
   font-size: 14px;
   font-weight: 400;
+  
 }
 
 .footer-socials-container{
@@ -700,6 +704,62 @@ main{
     grid-column-gap: 20px;
   }
 
+}
+/* Products NavBar */
+/* .border-0:focus{
+border: solid rgba(219, 149, 32, 1) 4px !important;
+} */
+
+/* Product Count */
+.p-count{
+  color:black;
+  margin: 4px;
+  width: 60px;
+}
+
+.p-ofer-product{
+  margin:15px;
+}
+.p-description-product{
+color: black;
+}
+
+/* Products card */
+.products-cards-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 315px);
+  grid-gap: 20px;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+.card-offer-localoffer{
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 185, 53);
+  z-index: 9999; 
+}
+.card-offer-localoffer p{
+  top:43px;
+  position: absolute;
+  color: black;
+  font-weight: 800;
+  font-size: larger;
+}
+
+.button-header{
+  background-color: #ffffff7c !important;
+  border: #d3cccc solid 4px !important;
+  margin: 15px;
 }
 
 

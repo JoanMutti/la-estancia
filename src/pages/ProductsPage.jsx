@@ -2,14 +2,15 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PCardListContainer from "../components/productsComponents/PCardListContainer";
-
+// import Layout from '../components/Layout'
 const ProductsPage = () => {
   return (
     <div>
-      <Header />
-      <h1>Productos</h1>
+        {/* <Layout /> */}
+      <Header /> {/* Eliminar despues del merge */}
       <PCardListContainer inOffers={false} />
-      <Footer />
+      <Footer />{/* Eliminar despues del merge */}
+        {/* <Layout /> */}
     </div>
   );
 };

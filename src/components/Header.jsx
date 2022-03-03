@@ -1,16 +1,10 @@
 import React, {useState} from 'react'
 import {AiOutlineHeart} from 'react-icons/ai'
 import logo from '../logo.svg'
+import NavBarHeader from './NavBarHeader/NavBarHeader'
 import { NavLink } from 'react-router-dom'
 import CartWidget from './CartWidget'
 
-const categories = [
-  { address: '/', text: 'Home'},
-  { address: '/productos', text: 'Productos'},
-  { address: '/sobre-nosotros', text: 'Sobre Nosotros'},
-  { address: '/recetas', text: 'Recetas'},
-  { address: '/promos', text: 'Promos'},
-]
 
 const Header = ({setCartOpen}) => {
 
@@ -23,17 +17,7 @@ const Header = ({setCartOpen}) => {
           <CartWidget setCartOpen={setCartOpen} />
         </div>
       </div>
-      <nav className='header-nav'>
-        {categories.map((category, index) => (
-          <NavLink
-            to={category.address}
-            key={category.text + index}
-            className='header-nav-link'
-          >
-            {category.text}
-          </NavLink>
-        ))}
-      </nav>
+      <NavBarHeader/>
     </header>
   )
 }

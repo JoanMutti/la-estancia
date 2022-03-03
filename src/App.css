@@ -423,33 +423,3 @@ color: black;
   margin: 15px;
 }
 
-/* About Us */
-
-.aboutUs{
-  background-image:url('../src/Fondo_sobre_nosotros\ 1.png') ;
-  background-repeat:no-repeat ;
-  background-position:left top;
-  background-size: 50% 100% ;
-  height: 70vh;  
-  
-}
-.aboutUs-card{
-  background-color: #fafafa;
-  width: 500px !important;
-  height: 225px !important;
-  margin: 30px 33vh;
-}
-.aboutUs-title, .aboutUs-text{
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.aboutUs-title{
-  font-size: 36px;
-  padding:20px ;
-}
-
-.aboutUs-text{
-  font-size: 14px;
-}

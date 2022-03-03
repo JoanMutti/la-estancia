@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import ProductsPage from './pages/ProductsPage'
 import OffersPage from './pages/OffersPage'
 import "bootstrap/dist/css/bootstrap.min.css";
-import AboutUs from './pages/AboutUs'
+import AboutUs from './pages/AboutUs/AboutUs'
 
 function App() {
   return (

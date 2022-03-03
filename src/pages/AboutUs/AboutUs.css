@@ -1,0 +1,35 @@
+/* About Us */
+
+.aboutUs{
+    background-image:url('../src/Fondo_sobre_nosotros\ 1.png') ;
+   background-repeat:no-repeat ;
+    background-position:left top;
+    background-size: 100vh;
+    height: 70vh;   
+    
+  }
+  .aboutUs-card{
+    background-color: #fafafa;
+     max-width: 500px !important; 
+    min-height: 225px !important; 
+   margin-top: 20px;
+    padding: 1%;
+   
+    
+  
+  }
+  .aboutUs-title, .aboutUs-text{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .aboutUs-title{
+    font-size: 36px;
+    padding:20px ;
+  }
+  
+  .aboutUs-text{
+    font-size: 14px;
+  }

@@ -7,12 +7,14 @@
 }
 
 @media screen and (max-width: 830px) {
+  
+}
+  
+@media screen and (max-width: 470px) {
     .carousel .slide .first img{
         width: 100%;
     }
-
     .carousel .slide img{
         width: 100%;
     }
 }
-  

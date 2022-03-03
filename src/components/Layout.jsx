@@ -7,7 +7,7 @@ const Layout = ({children}) => {
     const [cartOpen, setCartOpen] = React.useState(false)
 
     return (
-        <main>
+        <main className={cartOpen ? 'main-cart-open' : null}>
             <Header setCartOpen={setCartOpen} />
             <section>
                 {children}

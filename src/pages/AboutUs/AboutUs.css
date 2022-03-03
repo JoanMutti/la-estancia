@@ -1,22 +1,31 @@
 /* About Us */
 
 .aboutUs{
-    background-image:url('../src/Fondo_sobre_nosotros\ 1.png') ;
+    /* background-image:url('../src/Fondo_sobre_nosotros\ 1.png') ;
    background-repeat:no-repeat ;
     background-position:left top;
-    background-size: 100vh;
-    height: 70vh;   
-    
+    background-size: 100vh; */
+    height: 70vh; 
+    /* margin-left:-30px;  */
+    /* margin-top: -170px; */
+  position: relative;
+  }
+  
+  .aboutImg{
+    position: absolute;
+    width: 50%;
+    z-index:1;
+    margin-left: -50px;
   }
   .aboutUs-card{
     background-color: #fafafa;
-     max-width: 500px !important; 
+    max-width: 500px !important; 
     min-height: 225px !important; 
-   margin-top: 20px;
+    margin-top: 20px;
     padding: 1%;
-   
-    
-  
+    z-index: 2;
+    position: absolute;
+    left:calc(50%-250px);
   }
   .aboutUs-title, .aboutUs-text{
     color: black;

@@ -5,9 +5,13 @@ export const AppContext = React.createContext({})
 export const AppContextProvider = ({children}) => {
     const [products, setProducts] = useState([])
 
+
     const addProduct = (product) => {
-        const isInCart = (element) => element.id === product.id
-        !products.some(isInCart) && setProducts(prev => [...prev, product])
+        console.log(product)
+      
+      
+        // const isInCart = (element) => element.id === product.id
+        // !products.some(isInCart) && setProducts(prev => [...prev, product])
     }
 
     const removeProduct = (product) => {

@@ -38,14 +38,7 @@ const ProductCardList = ({ products, inOffers }) => {
           {  
               type.map((product) => ( 
                 <ProductCard  
-                id={product.id}
-                img={product.img}
-                name={product.name}
-                price={product.price}
-                inOffer={product.inOffer}
-                description={product.description}
-                offer={product.offer}
-                key={product.id}
+                product={product} key={'productCardId' + product.id}
                 />
                 ))
               }

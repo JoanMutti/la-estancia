@@ -7,9 +7,9 @@ const AddProductCart = ({product, cant}) => {
     const productCant = {...product, cant:cant}
 
   return (
-    <button className='btnOnAdd btn btn-success rounded-pill' onClick={()=>cant>0 && addProduct(productCant)}>
-    Agregar al carrito
-  </button>
+    <button className=' btn rounded-pill d-flex justify-content-center align-items-center' id="btnOnAdd" onClick={()=>cant>0 && addProduct(productCant)}>
+      Agregar al carrito
+    </button>
   )
 }
 

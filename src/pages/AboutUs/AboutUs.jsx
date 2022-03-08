@@ -8,7 +8,7 @@ let text = ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi c
 
   return (
     <>
-      <div className="aboutImg "><img src={imgFondo} alt="Fondo" /></div>
+      <div className="aboutImg " style={{backgroundImage: `url(${imgFondo})`}}></div>
     <Layout >
     <div className='aboutUs'>
 <div className='aboutUs-card container container-fluid text-center'>

@@ -23,11 +23,11 @@ const ProductsCount = ({ initial = 0, product}) => {
 
 
     return ( 
-      <div>
-      <div className='container container-fluid d-flex justify-content-center align-items-center'>
-        <button className='btn btn-secondary' onClick={minus}><CgMathMinus fontSize={12} color='#fafafa' /></button>
-        <p className='fs-4 p-count text-center' >{count}</p>
-        <button className='btn btn-secondary' onClick={plus}><CgMathPlus fontSize={12} color='#fafafa' /></button>
+      <div className='d-flex justify-content-center align-items-center row'>
+      <div className=' container container-fluid d-flex justify-content-between align-items-center' id="btnCount">
+        <button className='btn ' id='btn-minus' onClick={minus}>-</button>
+        <p className=' p-count text-center' >{count}</p>
+        <button className='btn 'id='btn-plus' onClick={plus}>+</button>
       </div>
       <AddProductCart product={product} cant={count}/>
       </div>

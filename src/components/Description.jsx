@@ -1,55 +1,22 @@
-import React from "react";
-import { Popover, Whisper, ButtonToolbar, Button,  } from "rsuite";
-
-const speaker = (
-  <Popover title="Title">
-    <p>This is a default Popover </p>
-    <p>Content</p>
-    <p>
-      <a>link</a>
-    </p>
-  </Popover>
-);
-
-const TriggerMethod = () => {
-  const triggerRef = React.useRef();
-  const open = () => triggerRef.current.open();
-  const close = () => triggerRef.current.close();
-
+import React, { useState } from "react";
+import { Popover } from "react-tiny-popover";
+const Description = ({ description }) => {
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
   return (
-    <div>
-      <Whisper
-        placement="top"
-        speaker={speaker}
-        ref={triggerRef}
-        trigger="none"
+    <Popover
+      isOpen={isPopoverOpen}
+      positions={["bottom", "left", "right"]}
+      content={<div className=" p-description-product2">{description}</div>}
+      onClickOutside={() => setIsPopoverOpen(false)}
+      padding={10}
+     >
+      <p
+        className=" p-description-product1"
+        onClick={() => setIsPopoverOpen(!isPopoverOpen)}
       >
-        <span>Click the `Open` and `Close` buttons.</span>
-      </Whisper>
-      <hr />
-      <ButtonToolbar>
-        <Button onClick={open}>Open</Button>
-        <Button onClick={close}>Close</Button>
-      </ButtonToolbar>
-    </div>
-  );
-};
-const Description = () => {
-  return (
-    <div>
-      <ButtonToolbar>
-        <Whisper
-          placement="top"
-          trigger="click"
-          controlId="control-id-click"
-          speaker={speaker}
-        >
-          <Button>Click</Button>
-        </Whisper>
-      </ButtonToolbar>
-      <hr />
-      <TriggerMethod />
-    </div>
+        Descripción &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &gt;
+      </p>
+    </Popover>
   );
 };
 

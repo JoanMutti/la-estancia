@@ -1,18 +1,27 @@
-import React from 'react'
-// import { useEffect, useState } from 'react'
-import ProductCardList from './ProductCardList'
-import offersData from '../../assets/offersData'
-const PCardListContainer = ({inOffers}) => {
+import React from "react";
+import ProductCardList from "./ProductCardList";
+import offersData from "../../assets/offersData";
 
-//Llamada de Firebase
+import { useState, useEffect } from "react";
+import firestoreFetch from "../../assets/firestoreFetch";
+const PCardListContainer = ({ inOffers }) => {
+  
+  const [datos, setDatos] = useState([]);
 
-  return (
-    // <div className=''>
-      
-        <ProductCardList products={offersData} inOffers={inOffers} />
-       // <ProductCardList products={data}/>
-    // </div>
-  )
-}
+  useEffect(() => {  
+    firestoreFetch(inOffers)
+      .then(result => setDatos(result))
+      .catch(err => console.log(err))
+  }, [datos]);
 
-export default PCardListContainer
+  useEffect(() => {
+    return () => {
+      setDatos([]);
+    };
+  }, []);
+
+  // return <ProductCardList products={offersData} inOffers={inOffers} />;
+  return <ProductCardList products={datos} inOffers={inOffers} />;
+};
+
+export default PCardListContainer;

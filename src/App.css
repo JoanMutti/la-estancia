@@ -834,8 +834,22 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: normal;
+  cursor: pointer;
 }
-
+.p-description-product2 {
+  background-color: white;
+  border: #635b57 solid 1px;
+  border-radius: 5px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  overflow:scroll;
+  max-width: 250px;
+  max-height: 230px;
+  
+}
 /* Products card */
 .products-cards-container {
   width: 100%;

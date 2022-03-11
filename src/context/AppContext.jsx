@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export const AppContext = React.createContext({})
 
 export const AppContextProvider = ({children}) => {
     const [products, setProducts] = useState([])
 
+    useEffect(() => {
+        localStorage.getItem('cart') && setProducts(JSON.parse(localStorage.getItem('cart')))
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(products))
+        products.length === 0 && localStorage.removeItem('cart')
+    }, [products])
+
 
     const addProduct = (product) => {
-        console.log(product)
-      
-      
-        // const isInCart = (element) => element.id === product.id
-        // !products.some(isInCart) && setProducts(prev => [...prev, product])
+        const isInCart = (element) => element.id === product.id
+        !products.some(isInCart) && setProducts(prev => [...prev, product])
+
     }
 
     const removeProduct = (product) => {
@@ -19,19 +26,23 @@ export const AppContextProvider = ({children}) => {
     }
 
     const addMore = (productId) => {
-        const aux = products.map(ele => ele.id === productId ? {...ele, cant: cant + 0.250} : ele)
+        const aux = products.map(ele => ele.id === productId ? {...ele, cant: ele.cant + 0.250} : ele)
         setProducts(aux)
     }
 
     const removeMore = (productId) => {
-        const aux = products.map(ele => ele.id === productId ? {...ele, cant: cant - 0.250} : ele)
-        setProducts(aux)
+        if(products.find(product => product.id === productId).cant > 0.250){
+            const aux = products.map(ele => ele.id === productId ? {...ele, cant: ele.cant - 0.250} : ele)
+            setProducts(aux)
+        }
     }
 
-
+    const getSubtotal = () => {
+        return products.map(product => product.price * product.cant).reduce(((x,y) => x + y), 0)
+    }
 
     return (
-        <AppContext.Provider value={{ products, addMore, removeMore, addProduct, removeProduct }}>
+        <AppContext.Provider value={{ products, addMore, removeMore, addProduct, removeProduct, getSubtotal }}>
             {children}
         </AppContext.Provider>
     )

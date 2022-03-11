@@ -5,8 +5,8 @@ const categories = [
     { address: '/', text: 'Home'},
     { address: '/productos', text: 'Productos'},
     { address: '/sobre-nosotros', text: 'Sobre Nosotros'},
-    { address: '/recetas', text: 'Recetas'},
-    { address: '/promos', text: 'Promos'},
+    { address: '/', text: 'Recetas'},
+    { address: '/', text: 'Promos'},
   ]
 const NavBarHeader = () => {
   return (

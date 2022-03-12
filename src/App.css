@@ -49,7 +49,7 @@ main {
 .header-up-icons {
   width: 70px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .header-up-icon {
@@ -177,7 +177,8 @@ main {
   height: 449px !important;
 }
 
-.card-offer-heart-icon , .card-offer-heart-icon1 {
+.card-offer-heart-icon,
+.card-offer-heart-icon1 {
   position: absolute;
   right: 12px;
   top: 12px;
@@ -191,16 +192,16 @@ main {
   z-index: 9999;
   cursor: pointer;
 }
-.card-offer-heart-icon1{
+.card-offer-heart-icon1 {
   right: -10px;
   top: 11px;
 }
 
-
-.card-offer img , .card-offer1 img{
+.card-offer img,
+.card-offer1 img {
   width: 100%;
 }
- 
+
 .card-offer-info {
   width: 100%;
   display: flex;
@@ -438,11 +439,11 @@ main {
   align-items: center;
 }
 
-.sc-product-controls svg{
+.sc-product-controls svg {
   cursor: pointer;
 }
 
-.sc-close-icon{
+.sc-close-icon {
   align-self: flex-end;
   cursor: pointer;
 }
@@ -654,18 +655,18 @@ main {
   bottom: 4px;
 }
 
-.cp-detail-info{
+.cp-detail-info {
   height: 100%;
   background-color: #fafafa;
   border-radius: 15px;
   padding: 25px;
 }
 
-.cp-detail-info h3{
+.cp-detail-info h3 {
   color: black;
 }
 
-.cp-btn-finish{
+.cp-btn-finish {
   background-color: rgba(73, 176, 54, 1);
   width: 100%;
   height: 35px;
@@ -675,21 +676,20 @@ main {
   font-size: 14px;
 }
 
-
 /* INPUT */
 
-.input-container{
+.input-container {
   display: flex;
   flex-direction: column;
 }
 
-.input-container label{
+.input-container label {
   font-size: 14px;
   font-weight: 400;
   color: black;
 }
 
-.input-container input{
+.input-container input {
   border: none;
   border-bottom: 1px solid rgba(207, 192, 176, 1);
   color: black;
@@ -699,17 +699,24 @@ main {
   margin-bottom: 12px;
 }
 
-.input-container input:focus-visible{
+.input-container input:focus-visible {
   outline: none;
   border-bottom: 1px solid rgba(73, 176, 54, 1);
 }
-
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 830px) {
   .App {
     padding: 12px;
+  }
+
+  .nav-container {
+    margin-left: auto;
+  }
+
+  .header-nav-link {
+    font-size: 24px;
   }
 
   .slider {
@@ -792,34 +799,34 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   font-family: "Roboto", sans-serif;
 }
 
-#btn-minus, #btn-plus {
+#btn-minus,
+#btn-plus {
   width: 30px;
   height: 30px;
-  background: #cfc0b0 ;
-  border-radius: 8px ; 
-  display: flex ;
+  background: #cfc0b0;
+  border-radius: 8px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  color:#635B57 ;
-  font-size: 32px ;
+  color: #635b57;
+  font-size: 32px;
 }
 
 #btn-plus {
-  font-size: 22px ;
+  font-size: 22px;
 }
 
-#btnOnAdd{
-  background-color: #49B036;
+#btnOnAdd {
+  background-color: #49b036;
   width: 200px;
   height: 30px;
-  color:white;
+  color: white;
   text-align: center;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  
 }
-#btnCount{
+#btnCount {
   width: 220px;
 }
 
@@ -845,10 +852,9 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
-  overflow:scroll;
+  overflow: scroll;
   max-width: 250px;
   max-height: 230px;
-  
 }
 /* Products card */
 .products-cards-container {
@@ -872,7 +878,7 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  background-color: #49B036;
+  background-color: #49b036;
   z-index: 9999;
 }
 .card-offer-localoffer p {
@@ -925,4 +931,3 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
     max-height: 520px;
   }
 }
-

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { CgMathPlus, CgMathMinus } from "react-icons/cg";
 import AddProductCart from "../AddProduct/AddProductCart";
 
 const ProductsCount = ({ initial = 0, product }) => {
@@ -10,11 +9,12 @@ const ProductsCount = ({ initial = 0, product }) => {
   }, []);
 
   const plus = () => {
-    setCount(count + 0.25);
+    setCount(count + product.offer);
+  
   };
   const minus = () => {
     if (count > initial) {
-      setCount(count - 0.25);
+      setCount(count - product.offer);
     }
   };
 

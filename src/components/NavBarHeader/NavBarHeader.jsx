@@ -21,7 +21,7 @@ const NavBarHeader = () => {
       <ul className="navbar-nav">
       {categories.map((category, index) => (
           <li className="nav-item" key={category.text + index +1}>
-            {/* No se si el NavLink necesita tener una key para funcionar, por eso la duplico en el <li> sumandole un 1 */}
+  
           <NavLink
             to={category.address}
             key={category.text + index}

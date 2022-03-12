@@ -835,6 +835,7 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
 }
 .p-description-product {
   color: black;
+ 
 }
 .p-description-product1 {
   color: #9e9080;
@@ -855,6 +856,10 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   overflow: scroll;
   max-width: 250px;
   max-height: 230px;
+<<<<<<< HEAD
+=======
+  padding: 10px;
+>>>>>>> e4b2ed75f811520e3cf482c66259e52718768457
 }
 /* Products card */
 .products-cards-container {

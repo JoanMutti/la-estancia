@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ProductsCount from "./ProductCount";
-import AddProductCart from "../AddProduct/AddProductCart";
 import { AiOutlineHeart } from "react-icons/ai";
 import { MdLocalOffer } from "react-icons/md";
 import Description from "../Description";
@@ -25,7 +24,9 @@ const ProductCard = ({ product }) => {
           </div>
         )}
         <div className="card-offer1">
-          <img className="img-fluid" src={product.img} alt={product.name} />
+          <div className=" img-size">
+          <img className="img-fluid " src={product.img} alt={product.name}/>
+          </div>
           <div className="card-offer-info">
             <p className="card-offer-name1">{product.name}</p>
            

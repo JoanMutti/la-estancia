@@ -11,10 +11,6 @@
   font-weight: 400;
 }
 
-main {
-  overflow: hidden;
-}
-
 .App {
   background-color: rgb(21, 20, 21);
   width: 100%;
@@ -81,6 +77,26 @@ main {
 .header-nav-link:hover {
   color: rgba(219, 149, 32, 1);
   border-bottom: 2px solid rgba(219, 149, 32, 1);
+}
+
+.cw-container {
+  position: relative;
+}
+
+.cw-quant-items {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: #990a00;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* MENU WIDGET */

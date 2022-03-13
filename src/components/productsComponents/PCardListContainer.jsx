@@ -5,13 +5,12 @@ import offersData from "../../assets/offersData";
 import { useState, useEffect } from "react";
 import firestoreFetch from "../../assets/firestoreFetch";
 const PCardListContainer = ({ inOffers }) => {
-  
   const [datos, setDatos] = useState([]);
-
-  useEffect(() => {  
+  console.log(datos);
+  useEffect(() => {
     firestoreFetch(inOffers)
-      .then(result => setDatos(result))
-      .catch(err => console.log(err))
+      .then((result) => setDatos(result))
+      .catch((err) => console.log(err));
   }, [datos]);
 
   useEffect(() => {

@@ -1,57 +1,9 @@
 import React from "react";
 import { AiOutlineHeart, AiFillMessage } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import pechugas from "../../pechugas.png";
-import alitas from "../../alitas.png";
-import bastones from "../../bastones.png";
-import soja from "../../soja.png";
-import tapa from "../../tapa.png";
 import gifEnvios from "../../envios.gif";
 
-const offers = [
-  {
-    img: pechugas,
-    name: "Pechuga de Pollo",
-    price: 600,
-    offer: "1 Kilo",
-    id: "iddeprueba",
-    description: "Lorem ipsum dolor sit amet...",
-  },
-  {
-    img: soja,
-    name: "Milanesas de soja",
-    price: 299,
-    offer: "1 Kilo",
-    id: "iddeprueba2",
-    description: "Lorem ipsum dolor sit amet...",
-  },
-  {
-    img: tapa,
-    name: "Tapa de asado",
-    price: 790,
-    offer: "1 Kilo",
-    id: "iddeprueba3",
-    description: "Lorem ipsum dolor sit amet...",
-  },
-  {
-    img: alitas,
-    name: "Alitas de Pollo",
-    price: 200,
-    offer: "2 Kilos",
-    id: "iddeprueba4",
-    description: "Lorem ipsum dolor sit amet...",
-  },
-  {
-    img: bastones,
-    name: "Bastones de queso",
-    price: 830,
-    offer: "1 Kilo",
-    id: "iddeprueba5",
-    description: "Lorem ipsum dolor sit amet...",
-  },
-];
-
-const CardOffer = ({ img, name, price, offer, id }) => {
+const CardOffer = ({ img, name, price, soldFor, id }) => {
   return (
     <div className="card-container">
       <div className="card-offer-heart-icon">
@@ -64,7 +16,7 @@ const CardOffer = ({ img, name, price, offer, id }) => {
             <p className="card-offer-name">{name}</p>
             <div className="card-offer-price">
               <p className="card-offer-price-value">{`$ ${price}`}</p>
-              <p className="card-offer-price-cant">{`Por ${offer}`}</p>
+              <p className="card-offer-price-cant">{`Por ${soldFor}`}</p>
             </div>
           </div>
         </div>
@@ -73,12 +25,12 @@ const CardOffer = ({ img, name, price, offer, id }) => {
   );
 };
 
-const Offers = () => {
+const Offers = ({ products }) => {
   return (
     <div>
       <h3 className="offers-title">Promociones para la semana</h3>
       <div className="offer-cards-container">
-        {offers.map((offer) => (
+        {products.map((offer) => (
           <CardOffer {...offer} key={offer.id} />
         ))}
       </div>

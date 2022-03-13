@@ -1,20 +1,30 @@
-import React, { useState } from "react";
-import { AiOutlineHeart } from "react-icons/ai";
+import React from "react";
 import logo from "../logo.svg";
 import NavBarHeader from "./NavBarHeader/NavBarHeader";
-import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
+import { useWindowSize } from "../hooks/useWindowSize";
+import MenuWidget from "./MenuWidget";
+
+const categories = [
+  { address: "/", text: "Home" },
+  { address: "/productos", text: "Productos" },
+  { address: "/sobre-nosotros", text: "Sobre Nosotros" },
+  { address: "/promos", text: "Promos" },
+];
 
 const Header = ({ setCartOpen }) => {
+  const widthScreen = useWindowSize();
+
   return (
     <header>
       <div className="header-up">
         <img src={logo} alt="Logo" className="header-up-logo" />
-        <NavBarHeader />
         <div className="header-up-icons">
           <CartWidget setCartOpen={setCartOpen} />
+          {widthScreen <= 1000 && <MenuWidget categories={categories} />}
         </div>
       </div>
+      {widthScreen > 1000 && <NavBarHeader categories={categories} />}
     </header>
   );
 };

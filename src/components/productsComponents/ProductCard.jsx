@@ -4,16 +4,16 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { MdLocalOffer } from "react-icons/md";
 import Description from "../Description";
 
-const ProductCard = ({ product }) => {
+const ProductCard = (props, { product }) => {
   const [productCount, setProductCount] = useState(0);
-
+  console.log(props);
   const onAdd = (count) => {
     setProductCount(count);
   };
 
   return (
     <div className="container conteriner-fluid">
-      <div className="card-container" id={product.id}>
+      <div className="card-container" id={product?.id}>
         <div className="card-offer-heart-icon1">
           <AiOutlineHeart fontSize={18} color="#fafafa" />
         </div>
@@ -25,12 +25,12 @@ const ProductCard = ({ product }) => {
         )}
         <div className="card-offer1">
           <div className=" img-size">
-          <img className="img-fluid " src={product.img} alt={product.name}/>
+            <img className="img-fluid " src={product.img} alt={product.name} />
           </div>
           <div className="card-offer-info">
             <p className="card-offer-name1">{product.name}</p>
-           
-            <Description description={product.description}/>
+
+            <Description description={product.description} />
             <div className="card-offer-price container-fluid text-center d-flex justify-content-center">
               <p className="card-offer-price-value ">{`$ ${product.price}`}</p>
               <p className="card-offer-price-cant ">{`/ por ${product.offer}`}</p>

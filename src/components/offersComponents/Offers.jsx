@@ -1,14 +1,11 @@
 import React from "react";
-import { AiOutlineHeart, AiFillMessage } from "react-icons/ai";
+import { AiFillMessage } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import gifEnvios from "../../envios.gif";
 
 const CardOffer = ({ img, name, price, soldFor, id }) => {
   return (
     <div className="card-container">
-      <div className="card-offer-heart-icon">
-        <AiOutlineHeart fontSize={18} color="#fafafa" />
-      </div>
       <Link to={`/productos/${id}`}>
         <div className="card-offer">
           <img src={img} alt="Foto producto" />
@@ -30,8 +27,8 @@ const Offers = ({ products }) => {
     <div>
       <h3 className="offers-title">Promociones para la semana</h3>
       <div className="offer-cards-container">
-        {products.map((offer) => (
-          <CardOffer {...offer} key={offer.id} />
+        {products.slice(0, 4).map((offer, index) => (
+          <CardOffer {...offer} key={offer.id + index} />
         ))}
       </div>
       <div className="message-delivery-container">

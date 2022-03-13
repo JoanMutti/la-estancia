@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import firestoreFetch from "../../assets/firestoreFetch";
 const PCardListContainer = ({ inOffers }) => {
   const [datos, setDatos] = useState([]);
-  console.log(datos);
+
   useEffect(() => {
     firestoreFetch(inOffers)
       .then((result) => setDatos(result))

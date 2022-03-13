@@ -1,22 +1,18 @@
 import React, { useState } from "react";
 import ProductsCount from "./ProductCount";
-import { AiOutlineHeart } from "react-icons/ai";
 import { MdLocalOffer } from "react-icons/md";
 import Description from "../Description";
 
-const ProductCard = (props, { product }) => {
+const ProductCard = ({ product }) => {
   const [productCount, setProductCount] = useState(0);
-  console.log(props);
+
   const onAdd = (count) => {
     setProductCount(count);
   };
 
   return (
     <div className="container conteriner-fluid">
-      <div className="card-container" id={product?.id}>
-        <div className="card-offer-heart-icon1">
-          <AiOutlineHeart fontSize={18} color="#fafafa" />
-        </div>
+      <div className="card-container" id={product.id}>
         {product.inOffer === true && (
           <div className="card-offer-localoffer">
             <p>PROMO</p>

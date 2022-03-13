@@ -13,7 +13,7 @@ const ProductCardList = ({ products, inOffers }) => {
   ];
   useEffect(() => {
     if (type.length < 1) {
-      setType(products.filter((p) => p.type.includes('productos')));
+      setType(products.filter((p) => p.type.includes("productos")));
     }
   }, []);
 
@@ -21,13 +21,10 @@ const ProductCardList = ({ products, inOffers }) => {
     <div className="container container-fluid ">
       {products.length > 0 ? (
         inOffers === false ? (
-          
           <>
-          
             <nav className="navbar navbar-expand ">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 {navOptions.map((type) => (
-                  
                   <li className="nav-item" key={type.key + 42}>
                     <Link
                       className="btn btn-outline-light border-0 rounded-pill m-1"

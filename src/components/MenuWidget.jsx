@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const MenuWidget = ({ categories }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(categories);
+
   return (
     <div className="menu-wg-container">
       <AiOutlineMenu

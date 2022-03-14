@@ -14,6 +14,7 @@ let envProcess;
 
 import.meta?.env ? (envProcess = import.meta.env) : (envProcess = process.env);
 
+//firebase config
 const firebaseConfig = {
   apiKey: envProcess.VITE_API_KEY,
   authDomain: envProcess.VITE_AUTH_DOMAIN,

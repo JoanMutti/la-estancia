@@ -3,26 +3,25 @@ import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
-console.log(import.meta.env);
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-let envProcess;
-console.log(process.env);
-import.meta?.env ? (envProcess = import.meta.env) : (envProcess = process?.env);
-
 //firebase config
 const firebaseConfig = {
-  apiKey: envProcess.VITE_API_KEY,
-  authDomain: envProcess.VITE_AUTH_DOMAIN,
-  projectId: envProcess.VITE_PROJECT_ID,
-  storageBucket: envProcess.VITE_STORAGE_BUCKET,
-  messagingSenderId: envProcess.VITE_MESSAGING_SENDER_ID,
-  appId: envProcess.VITE_ID,
-  measurementId: envProcess.VITE_MEASUREMENT_ID,
+  apiKey: import.meta.env.VITE_API_KEY || process.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN || process.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID || process.env.VITE_PROJECT_ID,
+  storageBucket:
+    import.meta.env.VITE_STORAGE_BUCKET || process.env.VITE_STORAGE_BUCKET,
+  messagingSenderId:
+    import.meta.env.VITE_MESSAGING_SENDER_ID ||
+    process.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_ID || process.env.VITE_ID,
+  measurementId:
+    import.meta.env.VITE_MEASUREMENT_ID || process.env.VITE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase

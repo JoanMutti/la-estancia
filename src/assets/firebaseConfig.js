@@ -11,8 +11,8 @@ console.log(import.meta.env);
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 let envProcess;
-console.log(process.env.VITE_API_KEY);
-import.meta?.env ? (envProcess = import.meta.env) : (envProcess = process.env);
+console.log(process.env);
+import.meta?.env ? (envProcess = import.meta.env) : (envProcess = process?.env);
 
 //firebase config
 const firebaseConfig = {

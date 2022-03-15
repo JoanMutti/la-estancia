@@ -11,13 +11,13 @@ const PCardListContainer = ({ inOffers }) => {
     firestoreFetch(inOffers)
       .then((result) => setDatos(result))
       .catch((err) => console.log(err));
-  }, [datos]);
-
-  useEffect(() => {
-    return () => {
-      setDatos([]);
-    };
   }, []);
+
+  // useEffect(() => {
+  //   return () => {
+  //     setDatos([]);
+  //   };
+  // }, []);
 
   // return <ProductCardList products={offersData} inOffers={inOffers} />;
   return <ProductCardList products={datos} inOffers={inOffers} />;

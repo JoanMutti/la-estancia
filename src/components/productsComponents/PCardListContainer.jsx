@@ -9,7 +9,8 @@ const PCardListContainer = ({ inOffers }) => {
 
   useEffect(() => {
     firestoreFetch(inOffers)
-      .then((result) => setDatos(result))
+      .then((result) => {setDatos(result)
+        console.log(result)})
       .catch((err) => console.log(err));
   }, []);
 

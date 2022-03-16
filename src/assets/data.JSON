@@ -1,0 +1,304 @@
+{
+    "__collections__": {
+      "products": {
+        "ImmabxmghCkWFgIQuBK": {
+          "name": "Entero",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Pollo%2Fpollo-entero-crudo-sobre-tabla-madera-verduras-especias_114579-33743.jpg?alt=media&token=c2137a16-adf1-496b-9880-d83b49bd5d27",
+          "description": " ",
+          "inOffer": false,
+          "offer":1 ,
+          "price":299 ,
+          "soldFor": "Kg",
+          "type": ["productos","pollo"],
+          "__collections__": {}
+        },        
+        "ysrmsPCnQ2UqeknfiHI": {
+          "name": "Pata y Muslo",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Pollo%2Fpata%20muslo%20pollo.jpg?alt=media&token=fff32bec-6987-4673-9c8d-c1855b662a27",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price": 299,
+          "soldFor": "Kg",
+          "type": ["productos","pollo"],
+          "__collections__": {}
+        },        
+        "RvgDC4MQoi6hf6Bpla4": {
+          "name": "Churrasco",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price":750 ,
+          "soldFor": "Kg",
+          "type": ["productos","pollo"],
+          "__collections__": {}
+        },        
+        "lRkevZw2D2OsSg5vp6B": {
+          "name": "Pechuga",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Pollo%2Fpata%20muslo%20pollo.jpg?alt=media&token=fff32bec-6987-4673-9c8d-c1855b662a27",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.5 ,
+          "price":750 ,
+          "soldFor": "Kg",
+          "type": ["productos","pollo"],
+          "__collections__": {}
+        },        
+        "Gn7gpdcMXgBTuJPjniY": {
+          "name": "Alitas",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.5 ,
+          "price":200 ,
+          "soldFor": "Kg",
+          "type": ["productos","pollo"],
+          "__collections__": {}
+        },        
+        "IK0KvaA3yaJ2S9jYfBb": {
+          "name": "Menudos y Carcasas",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.25,
+          "price":100 ,
+          "soldFor": "Kg",
+          "type": ["productos","pollo"],
+          "__collections__": {}
+        },        
+        "HpkBbYkb16ICv6bSPQr": {
+          "name": "Medallones",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Congelados%2FMedallon_pollo-3-crop-c0-5__0-5-540x540-70.jpg?alt=media&token=2fb1bbe8-e65f-477e-b9e8-21930fff33f5",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price": 690,
+          "soldFor": "Kg",
+          "type": ["productos","congelados"],
+          "__collections__": {}
+        },        
+        "wExTsZS95hhu6cl90eM": {
+          "name": "Burganas",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Congelados%2Fburgana%20espinaca.jpg?alt=media&token=fe5107ed-6069-4426-8f49-9c1fc0ebbd0c",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.5 ,
+          "price":580 ,
+          "soldFor": "Kg",
+          "type": ["productos","congelados"],
+          "__collections__": {}
+        },        
+        "NjH3I3gsi3xqFJkIZTx": {
+          "name": "Nuggets",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Congelados%2Fnuggets%20espinaca.jpg?alt=media&token=95f8d397-d48b-410f-a8d9-b679e52c92e3",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price": 690,
+          "soldFor": "Kg",
+          "type": ["productos","congelados"],
+          "__collections__": {}
+        },        
+        "sNhQD6vQkxkKa0nmfuU": {
+          "name": "Merluza c/hierbas",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Congelados%2Fmilanesa%20de%20merluza.jpg?alt=media&token=d1843b27-06bb-4ba7-9e43-2ba3e73be9fc",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.5 ,
+          "price":1200 ,
+          "soldFor": "Kg",
+          "type": ["productos","congelados"],
+          "__collections__": {}
+        },        
+        "9rWRHEhLuMjqaTNOvpB": {
+          "name": "Bastón de muzza",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Congelados%2Fbaston%20muzzarella%20muzarela.jpg?alt=media&token=897e0164-6455-4854-8f26-fa965093d0bf",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.5 ,
+          "price": 1200,
+          "soldFor": "Kg",
+          "type": ["productos","congelados", "quesos"],
+          "__collections__": {}
+        },        
+        "w2EMheDiZwwZNqRC0Dk": {
+          "name": "Milanesa de pollo",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price":690 ,
+          "soldFor": "Kg",
+          "type": ["productos","preparados", "pollo"],
+          "__collections__": {}
+        },        
+        "UMdv4ArCmvMVA3mp0nV": {
+          "name": "Hamburguesa",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Preparados%2Fnotco.jpg?alt=media&token=6c68d325-98b7-4295-a1b2-5c93f701a56c",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price":650 ,
+          "soldFor": "Kg",
+          "type": ["productos","preparados"],
+          "__collections__": {}
+        },        
+        "SmZoVXhhN6582pPB8Bt": {
+          "name": "Milanesa de soja",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price":600 ,
+          "soldFor": "Kg",
+          "type": ["productos","preparados"],
+          "__collections__": {}
+        },        
+        "hMlvLc1cNqt9nC7U290": {
+          "name": "Punta de Agua",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Quesos%2Fpunta%20de%20agua.jpg?alt=media&token=f33a9d12-35f1-467c-9262-89e0e2da0523",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.25,
+          "price": 690,
+          "soldFor": "Kg",
+          "type": ["productos","quesos"],
+          "__collections__": {}
+        },        
+        "HjqxGCSwQuMLMYqRGIO": {
+          "name": "Sardo Estacionado",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.25,
+          "price": 1200,
+          "soldFor": "Kg",
+          "type": ["productos","quesos"],
+          "__collections__": {}
+        },        
+        "qsgydTBbsdFZjMK51uk": {
+          "name": "Pategras",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Quesos%2Fpategras%20santa%20mar%C3%ADa.jpg?alt=media&token=64d75e8f-2662-483f-8651-7c0b88b8ca95",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.25 ,
+          "price":1100 ,
+          "soldFor": "Kg",
+          "type": ["productos","quesos"],
+          "__collections__": {}
+        },        
+        "VM49Vgiv2Q5DVH8izbE": {
+          "name": "Reggianito",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Quesos%2Freggianito%20melincue.jpg?alt=media&token=32f547d4-8289-459a-b94e-faeb14a0d54b",
+          "description": " ",
+          "inOffer": false,
+          "offer":0.25 ,
+          "price": 1500,
+          "soldFor": "Kg",
+          "type": ["productos","quesos"],
+          "__collections__": {}
+        },        
+        "WgWYKlYMdeuz5WKHEI4": {
+          "name": "Huevo x6",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2Fhuevo.jpg?alt=media&token=d17dc425-c21e-49df-ab7d-6ef0a7bef07d",
+          "description": " ",
+          "inOffer": false,
+          "offer": 1,
+          "price": 200,
+          "soldFor": "1/2 Docena",
+          "type": ["productos","algo-mas", "pollo"],
+          "__collections__": {}
+        },        
+        "6mFpyRRNNhLvMwEN860": {
+          "name": "Huevo x12",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2Fhuevo.jpg?alt=media&token=d17dc425-c21e-49df-ab7d-6ef0a7bef07d",
+          "description": " ",
+          "inOffer": false,
+          "offer": 1,
+          "price":250,
+          "soldFor": "Docena",
+          "type": ["productos","algo-mas", "pollo"],
+          "__collections__": {}
+        },        
+        "HHM5td6WESZDfXwC2xu": {
+          "name": "Maple de Huevo",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2Fhuevo.jpg?alt=media&token=d17dc425-c21e-49df-ab7d-6ef0a7bef07d",
+          "description": " ",
+          "inOffer": false,
+          "offer": 1,
+          "price": 480,
+          "soldFor": "Maple",
+          "type": ["productos","algo-mas", "pollo"],
+          "__collections__": {}
+        },        
+        "dIlxfebOGoexFgreIRf": {
+          "name": "Condimentos",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 1,
+          "price": 100,
+          "soldFor": "Unidad",
+          "type": ["productos","algo-mas"],
+          "__collections__": {}
+        },        
+        "hr9KDLkj8o64V2C9hel": {
+          "name": "Bolsa para horno",
+          "img": "",
+          "description": " ",
+          "inOffer": false,
+          "offer": 1,
+          "price": 150,
+          "soldFor": "Unidad",
+          "type": ["productos","algo-mas"],
+          "__collections__": {}
+        },        
+        "WEiUh2xnuAeTKb12yZi": {
+          "name": "Salsas",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2Fdescarga%20(4).jpeg?alt=media&token=4e6713e2-a9f4-4ac4-8747-049a84365457",
+          "description": " ",
+          "inOffer": false,
+          "offer":1 ,
+          "price": 300,
+          "soldFor": "Unidad",
+          "type": ["productos","algo-mas"],
+          "__collections__": {}
+        },        
+        "yRlEOcg82vvg5tpCXof": {
+          "name": "Not Mayo",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2F293.%20COTR015001.png?alt=media&token=d7af6562-1c5c-48fb-9da2-81896116aa66",
+          "description": " ",
+          "inOffer": false,
+          "offer": 1,
+          "price":300 ,
+          "soldFor": "Unidad",
+          "type": ["productos","algo-mas"],
+          "__collections__": {}
+        },        
+        "jibZXx8hdjPL7HXzzIX": {
+          "name": "Papas Bastón",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2Fpapas%20bast%C3%B3n%20mc%20cain.jpg?alt=media&token=af1e65a8-c66d-48d0-a1a9-c86e49c68708",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price":500 ,
+          "soldFor": "Kg",
+          "type": ["productos","algo-mas"],
+          "__collections__": {}
+        },        
+        "Mw0xqY7nwrMI6IE4VAk": {
+          "name": "Caritas de papa",
+          "img": "https://firebasestorage.googleapis.com/v0/b/granja-la-estancia.appspot.com/o/Algo%20m%C3%A1s%2FER0byKJUcAASHap.jpg?alt=media&token=0255f7cf-486c-4953-95dc-5d83c40e0667",
+          "description": " ",
+          "inOffer": false,
+          "offer": 0.5,
+          "price": 680,
+          "soldFor": "Kg",
+          "type": ["productos","algo-mas"],
+          "__collections__": {}
+        }     
+        
+      }
+    }
+  }

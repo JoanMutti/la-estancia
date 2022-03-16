@@ -1,47 +1,49 @@
-/* About Us */
+/* term  */
 
-.aboutUs{
+/* .term{
     height: 70vh; 
-  }
+  } */
  
-  .aboutImg{
+  .termImg{
     position: absolute;
     width: 50%;
      margin-left: -100px;
     margin-top: 70px; 
     /* background-image:url('../src/Fondo_sobre_nosotros\ 1.png'); */
     background-size: 100vh;
-    height: 80%;
+    height: 100%;
     background-repeat:no-repeat ;
   }
-  .aboutUs-card{
+  .term-card{
     background-color: #fafafa;
-    max-width: 500px !important; 
+    /* max-width:100vh !important;  */
     min-height: 225px !important; 
     margin-top: 20px;
-    padding: 1%;
+    padding: 30px 20px ;
     position: relative;
     border-radius:35px ;
 
   }
-  .aboutUs-title, .aboutUs-text{
+  .term-title, .term-text{
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     
   }
-  .aboutUs-title{
+  .term-title{
     font-size: 36px;
     padding:20px ;
   }
   
-  .aboutUs-text{
+  .term-text{
     font-size: 14px;
+    margin: 10px;
+    list-style:outside;
   }
 
   @media (max-width: 900px){
-    .aboutImg{
+    .termImg{
       display: none;
     }
   }

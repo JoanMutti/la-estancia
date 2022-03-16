@@ -435,6 +435,11 @@
   margin-right: 16px;
 }
 
+.nuestrosLocales{
+  margin: 20px  0px;
+}
+
+
 /* SHOPPING CART*/
 .cart {
   position: fixed;

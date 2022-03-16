@@ -4,7 +4,7 @@ import NavBarHeader from "./NavBarHeader/NavBarHeader";
 import CartWidget from "./CartWidget";
 import { useWindowSize } from "../hooks/useWindowSize";
 import MenuWidget from "./MenuWidget";
-
+import { Link } from "react-router-dom";
 const categories = [
   { address: "/", text: "Home" },
   { address: "/productos", text: "Productos" },
@@ -18,7 +18,7 @@ const Header = ({ setCartOpen }) => {
   return (
     <header>
       <div className="header-up">
-        <img src={logo} alt="Logo" className="header-up-logo" />
+      <Link to={'/'}> <img src={logo} alt="Logo" className="header-up-logo" /></Link> 
         <div className="header-up-icons">
           <CartWidget setCartOpen={setCartOpen} />
           {widthScreen <= 1000 && <MenuWidget categories={categories} />}

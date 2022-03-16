@@ -1,47 +1,50 @@
-/* About Us */
+/* faq */
 
-.aboutUs{
+/* .faq{
     height: 70vh; 
-  }
+  } */
  
-  .aboutImg{
+  .faqImg{
     position: absolute;
     width: 50%;
      margin-left: -100px;
     margin-top: 70px; 
     /* background-image:url('../src/Fondo_sobre_nosotros\ 1.png'); */
     background-size: 100vh;
-    height: 80%;
+    height: 100%;
     background-repeat:no-repeat ;
   }
-  .aboutUs-card{
+  .faq-card{
     background-color: #fafafa;
-    max-width: 500px !important; 
+    /* max-width: 500px !important;  */
     min-height: 225px !important; 
     margin-top: 20px;
-    padding: 1%;
+    padding: 30px 20px ;
     position: relative;
     border-radius:35px ;
 
   }
-  .aboutUs-title, .aboutUs-text{
+  .faq-title, .faq-text{
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     
   }
-  .aboutUs-title{
+  .faq-title{
     font-size: 36px;
     padding:20px ;
   }
   
-  .aboutUs-text{
+  .faq-text p{
     font-size: 14px;
-  }
+    color:black;
+
+}
+
 
   @media (max-width: 900px){
-    .aboutImg{
+    .faqImg{
       display: none;
     }
   }

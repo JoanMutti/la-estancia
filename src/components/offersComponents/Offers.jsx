@@ -37,12 +37,16 @@ const Offers = ({ products }) => {
           <h3 className="delivery-title">Envíos gratis</h3>
           <p className="delivery-subtitle">En pedidos superiores a $2500</p>
         </div>
-        <div className="messages-container">
+        <a
+          href="https://wa.me/+5491151232431"
+          target="_blank"
+          className="messages-container"
+        >
           <h3 className="messages-title">Llamanos por whatsapp</h3>
           <div className="message-icon-container">
             <AiFillMessage fontSize={36} color="white" />
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -8,10 +8,17 @@ const PCardListContainer = ({ inOffers }) => {
   // const [datos, setDatos] = useState([]);
   const { productList } = useContext(ProductListContext);
 
+
   // useEffect(() => {
   //   firestoreFetch(inOffers)
   //     .then((result) => setDatos(result))
   //     .catch((err) => console.log(err));
+  // }, []);
+
+  // useEffect(() => {
+  //   return () => {
+  //     setDatos([]);
+  //   };
   // }, []);
 
   // useEffect(() => {

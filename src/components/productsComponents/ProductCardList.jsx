@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
+import Loader from "../Loader";
 const ProductCardList = ({ products, inOffers }) => {
   const [type, setType] = useState([]);
 
   const navOptions = [
     { key: "productos", value: "Ver todos" },
-    { key: "carniceria", value: "Carnicería" },
-    { key: "polleria", value: "Pollería" },
+    { key: "pollo", value: "Pollo" },
     { key: "congelados", value: "Congelados" },
-    { key: "vegetariano", value: "Vegetariano" },
+    { key: "preparados", value: "Preparados" },
+    { key: "quesos", value: "Quesos" },
+    { key: "algo-mas", value: "Algo más" },
   ];
   useEffect(() => {
     if (type.length < 1) {
@@ -63,22 +65,18 @@ const ProductCardList = ({ products, inOffers }) => {
                 .filter((offerProduct) => offerProduct.inOffer == true)
                 .map((product) => (
                   <ProductCard
-                    id={product.id}
-                    img={product.img}
-                    name={product.name}
-                    price={product.price}
-                    inOffer={product.inOffer}
-                    description={product.description}
-                    offer={product.offer}
-                    key={product.id}
+                    product={product}
+                    key={"productInOffer"+product.id}
                   />
                 ))}
             </div>
           </>
         )
       ) : (
+      
         <div className="container">
-          <p className="fs-4">Cargando . . .</p>
+          {/* <p className="fs-4">Cargando . . .</p> */}
+          <Loader/>
         </div>
       )}
     </div>

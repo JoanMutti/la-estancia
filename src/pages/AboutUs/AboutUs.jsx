@@ -1,7 +1,8 @@
-import React from "react";
-import Layout from "../../components/Layout";
-import "./AboutUs.css";
-import imgFondo from "../../Fondo_about.png";
+import React from 'react'
+import Layout from '../../components/Layout'
+import './AboutUs.css' 
+import imgFondo from '../../Fondo_about.png'
+
 const AboutUs = () => {
   let title = "Nuestra Historia";
   let text =

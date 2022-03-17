@@ -2,13 +2,14 @@
 
 .aboutUs{
     height: 70vh; 
+    /* margin-bottom:40%; */
   }
- 
+  
   .aboutImg{
     position: absolute;
     width: 50%;
      margin-left: -100px;
-    margin-top: 70px; 
+    margin-top: 10%; 
     /* background-image:url('../src/Fondo_sobre_nosotros\ 1.png'); */
     background-size: 100vh;
     height: 80%;
@@ -22,7 +23,7 @@
     padding: 1%;
     position: relative;
     border-radius:35px ;
-
+    
   }
   .aboutUs-title, .aboutUs-text{
     color: black;
@@ -44,4 +45,10 @@
     .aboutImg{
       display: none;
     }
+  }
+  @media (max-width: 364px){
+    .aboutUs{
+        margin: 3px 10px 40%;
+      }
+    
   }

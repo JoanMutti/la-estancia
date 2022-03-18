@@ -19,8 +19,12 @@ const Slider = () => {
             <div className='slider-first-container'>
                 <div className='slider-first-text'>
                     <p className='slider-first-text-h1'>Estamos cerca tuyo</p>
-                    <p className='slider-second-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Potenti tortor eu nisi et suspendisse. Netus mi nulla platea eget arcu ut pharetrat quam.</p>
-                    <p>Busca el local más cercano a vos</p>
+                    <p className='slider-second-text'>
+                    Granja La estancia es un emprendimiento familiar con productos 
+                    de granja de primera calidad. Pollo, milanesas, huevos , quesos y mucho más. Nos enfocamos en que nuestros 
+                    clientes puedan comer rico y sano. <b>¡Te esperamos!</b>
+                    </p>
+                    {/* <p>Busca el local más cercano a vos</p> */}
                 </div>
             </div>
         </div>

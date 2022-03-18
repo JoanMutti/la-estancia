@@ -19,9 +19,9 @@ const ProductCard = ({ product }) => {
             <MdLocalOffer fontSize={100} />
           </div>
         )}
-        <div className="card-offer1">
+        <div className="card-offer1" >
           <div className=" img-size">
-            <img className="img-fluid " src={product.img} alt={product.name} />
+            <img className="img-fluid " src={product.img} alt={product.name} title={product.name} />
           </div>
           <div className="card-offer-info">
             <p className="card-offer-name1">{product.name}</p>

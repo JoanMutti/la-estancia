@@ -59,24 +59,23 @@ const ProductCardList = ({ products, inOffers }) => {
           </>
         ) : (
           <>
-            <h1 className="fs-2">Promos</h1>
+            <h1 className="fs-2 m-4">Promos</h1>
             <div className="products-cards-container col align-items-start justify-content-center">
               {products
                 .filter((offerProduct) => offerProduct.inOffer == true)
                 .map((product) => (
                   <ProductCard
                     product={product}
-                    key={"productInOffer"+product.id}
+                    key={"productInOffer" + product.id}
                   />
                 ))}
             </div>
           </>
         )
       ) : (
-      
         <div className="container">
           {/* <p className="fs-4">Cargando . . .</p> */}
-          <Loader/>
+          <Loader />
         </div>
       )}
     </div>

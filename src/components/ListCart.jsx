@@ -43,13 +43,19 @@ const ListCart = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState("");
+  const [shippingOption, setShippingOption] = useState("Envío a domicilio");
+  const [domicilio, setDomicilio] = useState("");
+
+  const handleRadioChange = (e) => {
+    setShippingOption(e.target.value);
+  };
 
   const handleSubmit = () => {
-    if (validateForm(name, mail, phone)) {
+    if (validateForm(name, mail, phone, domicilio, shippingOption)) {
       const message = generateMessage({
         products,
         total: getSubtotal(),
-        client: { name, mail, phone },
+        client: { name, mail, phone, shippingOption, domicilio },
       });
       window.open(`https://wa.me/+5491163375717?text=${message}`);
     }
@@ -84,6 +90,10 @@ const ListCart = () => {
               setMail={setMail}
               phone={phone}
               setPhone={setPhone}
+              shippingOption={shippingOption}
+              handleRadioChange={handleRadioChange}
+              domicilio={domicilio}
+              setDomicilio={setDomicilio}
             />
             <button className="cp-btn-finish" onClick={() => handleSubmit()}>
               Finalizar Compra

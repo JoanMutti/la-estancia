@@ -1,54 +1,32 @@
 /* About Us */
 
-.aboutUs{
-    height: 70vh; 
-    /* margin-bottom:40%; */
-  }
-  
-  .aboutImg{
-    position: absolute;
-    width: 50%;
-     margin-left: -100px;
-    margin-top: 10%; 
-    /* background-image:url('../src/Fondo_sobre_nosotros\ 1.png'); */
-    background-size: 100vh;
-    height: 80%;
-    background-repeat:no-repeat ;
-  }
-  .aboutUs-card{
-    background-color: #fafafa;
-    max-width: 500px !important; 
-    min-height: 225px !important; 
-    margin-top: 20px;
-    padding: 1%;
-    position: relative;
-    border-radius:35px ;
-    
-  }
-  .aboutUs-title, .aboutUs-text{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
-  }
-  .aboutUs-title{
-    font-size: 36px;
-    padding:20px ;
-  }
-  
-  .aboutUs-text{
-    font-size: 14px;
-  }
+.aboutUs-card {
+  background-color: #fafafa;
+  max-width: 800px !important;
+  min-height: 225px !important;
+  margin-top: 20px;
+  padding: 1%;
+  position: relative;
+  border-radius: 35px;
+}
+.aboutUs-title,
+.aboutUs-text {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.aboutUs-title {
+  font-size: 36px;
+  padding: 20px;
+}
 
-  @media (max-width: 900px){
-    .aboutImg{
-      display: none;
-    }
+.aboutUs-text {
+  font-size: 14px;
+}
+
+@media (max-width: 364px) {
+  .aboutUs {
+    margin: 3px 10px 40%;
   }
-  @media (max-width: 364px){
-    .aboutUs{
-        margin: 3px 10px 40%;
-      }
-    
-  }
+}

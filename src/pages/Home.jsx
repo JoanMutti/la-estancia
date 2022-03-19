@@ -6,14 +6,7 @@ import firestoreFetch from "../assets/firestoreFetch";
 import { ProductListContext } from "../context/ProductListContext";
 
 const Home = () => {
-  // const [offerProducts, setOfferProducts] = useState([]);
   const { productList } = useContext(ProductListContext);
-
-  // useEffect(() => {
-  //   firestoreFetch().then((products) => {
-  //     setOfferProducts(products.filter((product) => product.inOffer === true));
-  //   });
-  // }, []);
 
   return (
     <div>

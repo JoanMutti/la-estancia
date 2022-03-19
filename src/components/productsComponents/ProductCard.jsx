@@ -19,9 +19,14 @@ const ProductCard = ({ product }) => {
             <MdLocalOffer fontSize={100} />
           </div>
         )}
-        <div className="card-offer1" >
+        <div className="card-offer1">
           <div className=" img-size">
-            <img className="img-fluid " src={product.img} alt={product.name} title={product.name} />
+            <img
+              className="img-fluid "
+              src={product.img}
+              alt={product.name}
+              title={product.name}
+            />
           </div>
           <div className="card-offer-info">
             <p className="card-offer-name1">{product.name}</p>
@@ -29,7 +34,7 @@ const ProductCard = ({ product }) => {
             <Description description={product.description} />
             <div className="card-offer-price container-fluid text-center d-flex justify-content-center">
               <p className="card-offer-price-value ">{`$ ${product.price}`}</p>
-              <p className="card-offer-price-cant ">{`/ por ${product.offer}`}</p>
+              <p className="card-offer-price-cant ">{`/ ${product.soldFor}`}</p>
             </div>
 
             <ProductsCount initial={productCount} product={product} />

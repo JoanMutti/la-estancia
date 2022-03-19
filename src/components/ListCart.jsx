@@ -57,7 +57,7 @@ const ListCart = () => {
         total: getSubtotal(),
         client: { name, mail, phone, shippingOption, domicilio },
       });
-      window.open(`https://wa.me/+5491163375717?text=${message}`);
+      window.open(`https://wa.me/+5491166510053?text=${message}`);
     }
   };
 

@@ -26,15 +26,15 @@ export const AppContextProvider = ({ children }) => {
 
   const addMore = (productId) => {
     const aux = products.map((ele) =>
-      ele.id === productId ? { ...ele, cant: ele.cant + 0.25 } : ele
+      ele.id === productId ? { ...ele, cant: ele.cant + ele.offer } : ele
     );
     setProducts(aux);
   };
 
   const removeMore = (productId) => {
-    if (products.find((product) => product.id === productId).cant > 0.25) {
+    if (products.find((product) => product.id === productId).cant > 0) {
       const aux = products.map((ele) =>
-        ele.id === productId ? { ...ele, cant: ele.cant - 0.25 } : ele
+        ele.id === productId ? { ...ele, cant: ele.cant - ele.offer } : ele
       );
       setProducts(aux);
     }

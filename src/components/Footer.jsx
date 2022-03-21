@@ -42,11 +42,11 @@ const Footer = () => {
          
         </div>
     </footer>
-    <div className="btn-group dropend">
+    <div className="btn-group dropend " id="sitioCreado" >
   <button className="btn btn-dark dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
     Sitio creado por &emsp;
   </button>
-  <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+  <ul className="dropdown-menu dropdown-menu-dark " aria-labelledby="dropdownMenuButton1">
     <li><a className="dropdown-item" href="https://www.linkedin.com/in/hidracaberomencia/" target='_blank'>Hidra Cabero</a></li>
     <li><a className="dropdown-item" href="https://www.linkedin.com/in/joan-mutti" target='_blank'>Joan Mutti</a></li>
     <li><a className="dropdown-item" href="https://www.linkedin.com/in/julian-bleker/" target='_blank'>Julián Bleker</a></li>

@@ -1190,3 +1190,18 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
     max-height: 520px;
   }
 }
+
+#sitioCreado{
+  margin: 0px 30px;
+  position:absolute;
+  right: 3px;
+}
+
+@media screen and (max-width: 830px){
+  #sitioCreado{
+    margin: 15px ;
+    position:relative;
+    right: 0px;
+  }
+  
+}

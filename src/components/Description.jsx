@@ -10,12 +10,12 @@ const Description = ({ description }) => {
       onClickOutside={() => setIsPopoverOpen(false)}
       padding={10}
      >
-      <p
+      <span
         className=" p-description-product1"
         onClick={() => setIsPopoverOpen(!isPopoverOpen)}
       >
-        Descripción &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &gt;
-      </p>
+        Descripción &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span className=" p-description-product1-arrow"> &gt;</span>
+      </span>
     </Popover>
   );
 };

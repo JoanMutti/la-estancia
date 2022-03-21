@@ -1,30 +1,20 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Loader from "../Loader";
 const ProductCardList = ({ products, inOffers }) => {
-  const [type, setType] = useState([]);
-
-  const navOptions = [
-    { key: "productos", value: "Ver todos" },
-    { key: "pollo", value: "Pollo" },
-    { key: "congelados", value: "Congelados" },
-    { key: "preparados", value: "Preparados" },
-    { key: "quesos", value: "Quesos" },
-    { key: "algo-mas", value: "Algo más" },
-  ];
-  useEffect(() => {
-    if (type.length < 1) {
-      setType(products.filter((p) => p.type.includes("productos")));
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (type.length < 1) {
+  //     setType(products.filter((p) => p.type.includes("productos")));
+  //   }
+  // }, []);
 
   return (
     <div className="container container-fluid ">
       {products.length > 0 ? (
         inOffers === false ? (
           <>
-            <nav className="navbar navbar-expand ">
+            {/* <nav className="navbar navbar-expand ">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 {navOptions.map((type) => (
                   <li className="nav-item" key={type.key + 42}>
@@ -46,10 +36,10 @@ const ProductCardList = ({ products, inOffers }) => {
                   </li>
                 ))}
               </ul>
-            </nav>
+            </nav> */}
             <h1 className="fs-2">Productos</h1>
             <div className="products-cards-container col align-items-start justify-content-center">
-              {type.map((product) => (
+              {products.map((product) => (
                 <ProductCard
                   product={product}
                   key={"productCardId" + product.id}

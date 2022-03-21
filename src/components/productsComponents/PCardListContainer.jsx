@@ -1,13 +1,25 @@
 import React, { useContext } from "react";
 import ProductCardList from "./ProductCardList";
-import offersData from "../../assets/offersData";
+import CategoryNav from "./CategoryNav";
 import { ProductListContext } from "../../context/ProductListContext";
 import { useState, useEffect } from "react";
 import firestoreFetch from "../../assets/firestoreFetch";
+import { useParams } from "react-router-dom";
 const PCardListContainer = ({ inOffers }) => {
-  // const [datos, setDatos] = useState([]);
   const { productList } = useContext(ProductListContext);
+  const { type } = useParams();
+  const [filterProducts, setFilterProducts] = useState(productList);
 
+  useEffect(() => {
+    if (type) {
+      const aux = productList.filter(
+        (product) => product.type.includes(type) === true
+      );
+      setFilterProducts(aux);
+    } else {
+      setFilterProducts(productList);
+    }
+  }, [type, productList]);
 
   // useEffect(() => {
   //   firestoreFetch(inOffers)
@@ -28,7 +40,12 @@ const PCardListContainer = ({ inOffers }) => {
   // }, []);
 
   // return <ProductCardList products={offersData} inOffers={inOffers} />;
-  return <ProductCardList products={productList} inOffers={inOffers} />;
+  return (
+    <>
+      <CategoryNav />
+      <ProductCardList products={filterProducts} inOffers={inOffers} />
+    </>
+  );
 };
 
 export default PCardListContainer;

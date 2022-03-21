@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillMessage } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import gifEnvios from "../../envios.gif";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 const CardOffer = ({ img, name, price, soldFor, id }) => {
   return (
@@ -23,11 +24,25 @@ const CardOffer = ({ img, name, price, soldFor, id }) => {
 };
 
 const Offers = ({ products }) => {
+  const width = useWindowSize();
+  const offerProducts = products
+    .filter((offerProduct) => offerProduct.inOffer == true)
+    .slice(0, 4);
+
   return (
     <div>
       <h3 className="offers-title">Promociones para la semana</h3>
-      <div className="offer-cards-container">
-        {products.slice(0, 4).map((offer, index) => (
+      <div
+        className="offer-cards-container"
+        style={
+          width > 700
+            ? {
+                gridTemplateColumns: `repeat(${offerProducts.length}, 1fr)`,
+              }
+            : null
+        }
+      >
+        {offerProducts.map((offer, index) => (
           <CardOffer {...offer} key={offer.id + index} />
         ))}
       </div>

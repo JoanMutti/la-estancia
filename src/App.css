@@ -411,21 +411,29 @@ img {
 
 .footer-list-container {
   display: grid;
-  grid-row-gap: 16px;
-  grid-column-gap: 60px;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
   grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  border: white solid 1px;
+  padding: 5px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-list-item {
   text-decoration-line: none;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 7px;
 }
 
 .footer-socials-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 5px;
 }
 
 .social {
@@ -1001,15 +1009,19 @@ img {
   .delivery-container img {
     left: -5px;
   }
-
+}
+@media screen and (max-width: 936px) {
   .footer-container {
     flex-direction: column-reverse;
     height: 250px;
+    margin-top: 100px;
   }
 
   .footer-list-container {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
+    margin: 5px 0px 20px;
+    align-items: center;
   }
 }
 /* Products NavBar */
@@ -1070,6 +1082,13 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   font-weight: normal;
   cursor: pointer;
 }
+.p-description-product1-arrow {
+  color: #8f8274;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
 .p-description-product2 {
   background-color: white;
   border: #635b57 solid 1px;
@@ -1096,17 +1115,18 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
 
 .card-offer-localoffer {
   position: absolute;
-  left: 7px;
-  top: 7px;
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  background-color: #49b036;
   z-index: 9999;
+  width: 100px;
+  /* left: 7px;
+  top: 7px; */
+  /*height: 115px; */
+  /* border-radius: 50%; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* width: 300px; */
+  /* font-family: "Roboto", sans-serif;
+  background-color: #49b036; */
 }
 .card-offer-localoffer p {
   top: 43px;

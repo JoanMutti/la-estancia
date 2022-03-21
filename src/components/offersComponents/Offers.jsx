@@ -53,7 +53,7 @@ const Offers = ({ products }) => {
           <p className="delivery-subtitle">En pedidos superiores a $2500</p>
         </div>
         <a
-          href="https://wa.me/+5491151232431"
+          href="https://wa.me/+5491166510053"
           target="_blank"
           className="messages-container"
         >

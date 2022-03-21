@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProductsCount from "./ProductCount";
 import { MdLocalOffer } from "react-icons/md";
 import Description from "../Description";
-
+import promo from '../../promo.png'
 const ProductCard = ({ product }) => {
   const [productCount, setProductCount] = useState(0);
 
@@ -14,10 +14,9 @@ const ProductCard = ({ product }) => {
     <div className="container conteriner-fluid">
       <div className="card-container" id={product.id}>
         {product.inOffer === true && (
-          <div className="card-offer-localoffer">
-            <p>PROMO</p>
-            <MdLocalOffer fontSize={100} />
-          </div>
+          
+            <img src={promo} alt="promo" className="card-offer-localoffer"/>
+          
         )}
         <div className="card-offer1">
           <div className=" img-size">

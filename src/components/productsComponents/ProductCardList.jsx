@@ -75,7 +75,7 @@ const ProductCardList = ({ products, inOffers }) => {
       ) : (
       
         <div className="container">
-          {/* <p className="fs-4">Cargando . . .</p> */}
+         
           <Loader/>
         </div>
       )}

@@ -7,14 +7,12 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <>
-    <footer className='footer-container'>
+    <footer className='footer-container '>
         <Link to={'/'}><img src={logo} alt="Logo" className='footer-logo' /></Link>
         <div className='footer-list-container'>
             <Link to={'/sobre-nosotros'}><p className='footer-list-item'>Sobre Nosotros</p></Link>
             <Link to={'/productos'}><p className='footer-list-item'>Nuestros Productos</p></Link>
-            {/* <Link to={'/'}><p className='footer-list-item'>Nuestros Locales</p></Link> */}
-            {/* <Link to={'/'}><p className='footer-list-item'>Recetas</p></Link> */}
-            {/* <Link to={'/'}><p className='footer-list-item'>Ayuda</p></Link> */}
+           
             <Link to={'/preguntas-frecuentes'}><p className='footer-list-item'>Preguntas Frecuentes</p></Link>
             <Link to={'/terminos-y-condiciones'}><p className='footer-list-item'>Terminos y Condiciones</p></Link>
        
@@ -36,11 +34,7 @@ const Footer = () => {
                     <AiOutlineInstagram fontSize={24} color='rgb(21, 20, 21)' />
                 </a>
             </div>
-            {/* <div className='social'>
-                <a href="http://www.facebook.com" target='_blank' >
-                    <ImTwitter fontSize={24} color='rgb(21, 20, 21)' />
-                </a>
-            </div> */}
+           
             <div className='social'>
                 <a href="https://wa.me/+5491151232431" target='_blank' >
                     <ImWhatsapp fontSize={24} color='rgb(21, 20, 21)' />

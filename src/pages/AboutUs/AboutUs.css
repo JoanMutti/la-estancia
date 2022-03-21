@@ -10,7 +10,6 @@
     width: 50%;
      margin-left: -100px;
     margin-top: 10%; 
-    /* background-image:url('../src/Fondo_sobre_nosotros\ 1.png'); */
     background-size: 100vh;
     height: 80%;
     background-repeat:no-repeat ;
@@ -20,7 +19,7 @@
     max-width: 500px !important; 
     min-height: 225px !important; 
     margin-top: 20px;
-    padding: 1%;
+    padding: 1% 4%;
     position: relative;
     border-radius:35px ;
     
@@ -52,3 +51,4 @@
       }
     
   }
+ 

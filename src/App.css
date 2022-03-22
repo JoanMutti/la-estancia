@@ -850,6 +850,17 @@ img {
   color: #49b036;
 }
 
+.shipping-container label {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+#envio,
+#retiro {
+  margin-right: 4px;
+}
+
 /* INPUT */
 
 .input-container {
@@ -1191,17 +1202,16 @@ border: solid rgba(219, 149, 32, 1) 4px !important;
   }
 }
 
-#sitioCreado{
+#sitioCreado {
   margin: 0px 30px;
-  position:absolute;
+  position: absolute;
   right: 3px;
 }
 
-@media screen and (max-width: 830px){
-  #sitioCreado{
-    margin: 15px ;
-    position:relative;
+@media screen and (max-width: 830px) {
+  #sitioCreado {
+    margin: 15px;
+    position: relative;
     right: 0px;
   }
-  
 }

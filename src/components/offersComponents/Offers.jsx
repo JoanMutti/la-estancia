@@ -7,7 +7,7 @@ import { useWindowSize } from "../../hooks/useWindowSize";
 const CardOffer = ({ img, name, price, soldFor, id }) => {
   return (
     <div className="card-container">
-      <Link to={`/productos/${id}`}>
+      <Link to={`/productos`}>
         <div className="card-offer">
           <img src={img} alt="Foto producto" />
           <div className="card-offer-info">

@@ -49,7 +49,7 @@ const ClientForm = ({
             placeholder="Ingresá la direccion de envío"
           />
         )}
-        <div>
+        <div className="shipping-container">
           <div>
             <label htmlFor="envio">
               <input
